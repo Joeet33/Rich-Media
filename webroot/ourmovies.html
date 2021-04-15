@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Sous Chef</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+<link rel="apple-touch-icon" href="images/logo152.png">   
+<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="My Sous Chef"> 
+<meta name="msapplication-TileImage" content="images/logo144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/ourmovies.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
+  
+</head>
+<body>
+	
+	<div class="logo"> <a href="#"><img src="https://i.pinimg.com/originals/5f/9b/d7/5f9bd71fff2ab8be8a2f9a8dcf8568b0.png" alt="Logo"></a></div> <!--- Code for the Creative Critique logo  --->
+	
+	<nav>   <!--- Main naviagion bar  --->
+		<ul>
+			<li class="non_mobile_li"> <a href="#">OUR MOVIES</a></li>
+			<li class="non_mobile_li"> <a href="#">TOP MOVIES</a></li>
+			<li class="non_mobile_li"> <a href="#">RECOMMENDED</a></li>
+			<li class="non_mobile_li"> <a href="#">LOG IN</a></li>
+			<li id="hamburger_icon" class="navbar_icons" onclick="myFunction()"> <a href="#bbb"><i class="fa fa-bars"></i></a></li>
+			<li id="search_icon" class="navbar_icons"> <a href="#sss"><i class="fa fa-search"></i></a></li>
+		</ul>
+	</nav>
+	
+	
+	<div id="myLinks">   <!--- Navigation bar used when hamburger menu is clicked --->
+    	<a href="#"><i class="fa fa-film"> </i> OUR MOVIES</a>
+    	<a href="#"><i class="fa fa-star"> </i> TOP MOVIES</a>
+    	<a href="#"><i class="fa fa-thumbs-up"> </i> RECOMMENDED</a>
+		<a href="#"><i class="fa fa-search"> </i> SEARCH</a>
+		<a href="#"><i class="fa fa-user-circle"> </i> LOG IN</a>
+    </div>
+	
+<a id="img_pos1" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos2" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos3" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos4" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos5" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos6" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos7" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+
+<a id="img_pos8" href="">	
+	<img class="img_size" src="images/film_template.jpg">
+</a>
+	
+	
+<!--- Code that controls when the hamburger menu is displayed --->
+<script>   
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	
+</body>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</html>
