@@ -26,7 +26,7 @@ nav a {
 	width: 100px;
 	display: block;
 	padding: 20px 12px;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	color: white;
 	text-align: center;
@@ -95,56 +95,57 @@ li {
 }
 
 .img_size {
-    height: 26vh;
-    width: 21vw;
+    height: 25%;
+	width: 20%;
 }
 
 #img_pos1 {
-    position: absolute;
-    right: 77vw;
-    top: 20vh;
+    position: relative;
+    top: 10%;
+	left: 6%;
+	
 }
 
 #img_pos2 {
-    position: absolute;
-    right: 52vw;
-    top: 20vh;
+    position: relative;
+    top: 10%;
+	left: 8%;
 }
 
 #img_pos3 {
-    position: absolute;
-    right: 27vw;
-    top: 20vh;
+    position: relative;
+    top: 10%;
+	left: 10%;
 }
 
 #img_pos4 {
-    position: absolute;
-    right: 3vw;
-    top: 20vh;
+    position: relative;
+    top: 10%;
+	left: 12%;
 }
 
 #img_pos5 {
-    position: absolute;
-    right: 77vw;
-    top: 55vh;
+    position: relative;
+    top: 20%;
+	left: 6%;
 }
 
 #img_pos6 {
-    position: absolute;
-    right: 52vw;
-    top: 55vh;
+    position: relative;
+    top: 20%;
+	left: 8%;
 }
 
 #img_pos7 {
-    position: absolute;
-    right: 27vw;
-    top: 55vh;
+    position: relative;
+    top: 20%;
+	left: 10%;
 }
 
 #img_pos8 {
-    position: absolute;
-    right: 3vw;
-    top: 55vh;
+    position: relative;
+    top: 20%;
+	left: 12%;
 }
 
 
