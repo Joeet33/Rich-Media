@@ -189,6 +189,77 @@ li {
 	}
 }
 
+@media (max-width: 1024px) {
+	#img_pos1 {
+	position: relative;
+    top: 10%;
+    left: 5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos2 {
+	position: relative;
+    top: 10%;
+    left: 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos3 {
+	position: relative;
+    top: 13%;
+	left: 5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos4 {
+	position: relative;
+    top: 13%;
+	left: 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos5 {
+	position: relative;
+    top: 16%;
+	left: 5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos6 {
+	position: relative;
+    top: 16%;
+	left: 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos7 {
+	position: relative;
+    top: 19%;
+	left: 5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#img_pos8 {
+	position: relative;
+    top: 19%;
+	left: 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+.img_size {
+    height: 20%;
+    width: 42%;
+}
+}
+
 @media (max-width: 720px) {
 	  .logo img {
 		margin-left: 20px;
