@@ -68,8 +68,26 @@ li {
 	font-size: 20px;
 }
 
+/* Code for the footer */
+#footer {
+    position: fixed;
+    bottom: 0%;
+    height: 11%;
+    width: 100%;
+    background-color: #080808;
+    overflow: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 70px;
+    min-width: 300px;
+}
 
-
+#copyrights {
+	position: absolute;
+    font-size: 3vh;
+    left: 45vw;
+    top: 3vh;
+}
 
 /* Code for the hamburger menu drop down */
 
