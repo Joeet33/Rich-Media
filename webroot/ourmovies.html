@@ -4,8 +4,9 @@
   <title>My Sous Chef</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">	 
- <link rel="stylesheet" href="css/ourmovies.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
+  <link rel="stylesheet" href="css/ourmovies.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
 </head>
 <body>
@@ -17,7 +18,7 @@
 			<li class="non_mobile_li"> <a href="#">OUR MOVIES</a></li>
 			<li class="non_mobile_li"> <a href="#">TOP MOVIES</a></li>
 			<li class="non_mobile_li"> <a href="#">RECOMMENDED</a></li>
-			<li class="non_mobile_li"> <a href="#">LOG IN</a></li>
+			<li id="loginbut" class="non_mobile_li"> <a href="#">LOG IN</a></li>
 			<li id="hamburger_icon" class="navbar_icons" onclick="myFunction()"> <a href="#bbb"><i class="fa fa-bars"></i></a></li>
 			<li id="search_icon" class="navbar_icons"> <a href="#sss"><i class="fa fa-search"></i></a></li>
 		</ul>
@@ -29,8 +30,35 @@
     	<a href="#"><i class="fa fa-star"> </i> TOP MOVIES</a>
     	<a href="#"><i class="fa fa-thumbs-up"> </i> RECOMMENDED</a>
 		<a href="#"><i class="fa fa-search"> </i> SEARCH</a>
-		<a href="#"><i class="fa fa-user-circle"> </i> LOG IN</a>
+		<a href="#" id="mobileloginbut"><i class="fa fa-user-circle"> </i> LOG IN</a>
     </div>
+	
+	<div id="search_popup">
+		<div id="close_button"> 
+			<i class="fa fa-times"></i>
+		</div>
+		<div id="search_bar"> 
+			<form id="searchbx">
+				<input type="text" id="sname" placeholder="Search..."><i class="fa fa-search"></i>
+			</form>
+		</div>
+	</div>
+	
+	<div id="signin_popup">	
+		<div id="close_button2">
+			<i class=" fa fa-times"></i>
+		</div>
+		<div id="login_inputs">
+			<h1 id="logintitle">Log In</h1>
+			<form id="login_form1">
+				<input type="text" id="loginusername" placeholder="Username...">
+			</form>
+			<form id="login_form2">
+				<input type="password" id="loginpassword" placeholder="Password...">
+			</form>
+			<button id="submitbuttonlog" type="submit">Log In</button>
+		</div>
+	</div>
 	
 <a id="img_pos1" href="">	
 	<img class="img_size" src="images/film_template.jpg">
@@ -75,6 +103,43 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+	
+$("#search_icon").click(function() {
+	
+	$("#search_popup").show();
+
+});
+	
+$("#loginbut").click(function() {
+	
+	$("#signin_popup").show();
+
+});
+	
+$("#mobileloginbut").click(function() {
+	
+$("#signin_popup").show();
+
+});
+	
+	
+$("#close_button").click(function() {
+	
+	$("#search_popup").hide();
+
+});
+	
+$("#close_button2").click(function() {
+	
+	$("#signin_popup").hide();
+
+});
+	
+$("#submitbuttonlog").click(function() {
+	
+	alert("You have logged in")
+
+});
 </script>
 	
 </body>
