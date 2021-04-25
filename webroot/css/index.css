@@ -161,6 +161,8 @@ li {
     font-weight: bold;
     min-height: 70px;
     min-width: 300px;
+    position: absolute;
+    bottom: 0%;
 }
 
 #copyrights {
@@ -253,12 +255,6 @@ li {
 }
 
 @media (max-width: 1024px) {
-	.featured {
-	  
-  }
-}
-
-@media (max-width: 1024px) {
 	#main {
 		display: flex;
 		flex-direction: column;
@@ -290,6 +286,20 @@ li {
 		padding-top: 6%;
 		padding-left: 28%;
 	}
+}
+
+@media (max-width: 1024px) {
+#footer {
+    width: 100%;
+    background-color: #080808;
+    overflow: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 70px;
+    min-width: 300px;
+	position: unset;
+    bottom: 0%;
+}
 }
 
 /* */
