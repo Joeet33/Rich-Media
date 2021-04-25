@@ -52,19 +52,32 @@ li {
 	
 }
 
+#main {
+	display: flex;
+	min-height: 75.5%;
+}
+
+/*Featured posts*/
+
+.featured {
+	position: relative;
+    width: 22%;
+    padding-top: 6%;
+    padding-left: 2%;
+}
+
 /* Styling slideshow on homepage */
 
 .slidershow {
-	width: 800px;
-	height: 435px;
-	overflow: hidden;
+	width: 50%;
+    height: 50%;
+    overflow: hidden;
+    right: 3%;
+	padding-top: 4%;
 }
 .middle {
-	position: absolute;
-	top: 56%;
-	left: 23%;
-	transform: translate(-50%,-50%);
-	border-radius: 61px;
+	position: relative;
+    border-radius: 61px;
 }
 .navslide {
 	position: absolute;
@@ -124,44 +137,6 @@ li {
 	margin-left: -80%;
   }
 
-/*Featured posts*/
-
-.row-padding {
-	position: absolute;
-	width: 402px;
-	left: 51%;
-	top: 26%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Code for the two icons in the top right */
 
 
@@ -179,9 +154,6 @@ li {
 
 /* Code for the footer */
 #footer {
-    position: fixed;
-    bottom: 0%;
-    height: 11%;
     width: 100%;
     background-color: #080808;
     overflow: none;
@@ -192,7 +164,7 @@ li {
 }
 
 #copyrights {
-	position: absolute;
+	position: relative;
     font-size: 3vh;
     left: 45vw;
     top: 3vh;
@@ -277,6 +249,46 @@ li {
 @media (max-width: 395px) {
 	  #search_icon {
 		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.featured {
+	  
+  }
+}
+
+@media (max-width: 1024px) {
+	#main {
+		display: flex;
+		flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+ .middle {
+    position: relative;
+    border-radius: 61px;
+    left: 13%;
+}
+}
+
+@media (max-width: 1024px) {
+	.slidershow {
+	width: 75%;
+    height: 75%;
+    overflow: hidden;
+    padding-top: 12%;
+    border-radius: 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.featured {
+		position: relative;
+		width: 45%;
+		padding-top: 6%;
+		padding-left: 28%;
 	}
 }
 
