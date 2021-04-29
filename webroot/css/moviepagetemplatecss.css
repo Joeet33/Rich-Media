@@ -1,0 +1,481 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #202020;
+	height: 100vh;
+	color: white;
+	overflow: auto;
+}
+
+/* Code for the main navigation bar */
+
+nav {
+	height: 11%;
+	width: 100%;
+	background-color: #080808;
+	overflow: none;
+	font-size: 14px;
+	font-weight: bold;
+	min-height: 70px;
+	min-width: 300px;
+}
+
+nav a {
+	width: 100px;
+	display: block;
+	padding: 20px 12px;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	text-align: center;
+}
+
+ul {
+	padding: 5px 0 0 0;
+	margin: 0 0 0 275px;
+	list-style: none;
+}
+
+li {
+	float: left;
+}
+
+
+.logo img {
+	position: absolute;
+	margin-left: 40px;
+	width: 220px;
+	height: auto;
+	padding-top: 2px;
+	
+}
+
+
+/* Code for the two icons in the top right */
+
+
+#search_icon {
+	position: relative;
+	float: right;
+	font-size: 20px;
+}
+
+#hamburger_icon {
+	position: relative;
+	float: right;
+	font-size: 20px;
+}
+
+
+
+
+/* Code for the hamburger menu drop down */
+
+#myLinks {
+  display: none;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+  text-align: center;
+  background-color: #101010;
+  font-weight: bold;
+  transition: all 0.5 ease 0.5;
+}
+
+#myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+#myLinks a:hover {
+  background-color: #505050;
+}
+
+
+
+
+#search_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+}
+
+#signin_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+}
+
+#login_inputs {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	background-color: #181818;
+}
+
+#logintitle {
+	position: relative;
+	text-align: center;
+	top: 5%;
+	font-size: 30px;
+	text-decoration: underline 2px #D49204;
+	cursor: default;
+}
+
+#login_form1 {
+	text-align: center;
+}
+
+#login_form2 {
+	text-align: center;
+}
+
+#loginusername {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#loginpassword {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#submitbuttonlog {
+	width: 25%;
+	margin-top: 8%;
+	margin-left: 37.5%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	color: lightgray;
+	border: 2px solid #D49204;
+	background-color: #101010;
+	cursor: pointer;
+}
+
+#search_bar {
+	position: relative;
+	height: 15%;
+	width: 100%;
+	top: 50%;	
+}
+
+#searchbx {
+	text-align: center;
+}
+
+#sname {
+	height: 15%;
+	width: 40%;
+	font-size: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	
+}
+
+::placeholder {
+	color: lightgray;
+}
+
+.fa-search:hover {
+	cursor: pointer;
+}
+
+.fa-times:hover {
+	cursor: pointer;
+}
+
+#close_button {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+#close_button2 {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+/* Individual movie page */
+
+#poster_and_info {
+	position: relative;
+	width: 35%;
+	height: 105%;
+	top: 0%;
+	background-color: #080808;
+	min-width: 320px;
+	max-width: 500px;
+	left: 2%;
+}
+
+#movie_title {
+	text-align: center;
+	padding-top: 5%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-decoration: underline 2px solid #D49204;
+}
+
+#movie_poster_box {
+	position: relative;
+	width: 75%;
+	height: 70%;
+	left: 12.5%;
+	background-color: #080808;
+	object-fit: cover;
+	
+}
+
+#movie_poster_img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.info_text {
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 2vh;
+	padding: 0px 5px 0px 5px;
+}
+
+#trailer_box {
+	position: relative;
+	height: 55%;
+	width: 55%;
+	top: -105%;
+	right: 2%;
+	background-color: #080808;
+	float: right;
+	
+}
+
+#trailer {
+	width: 100%;
+	height: 100%;
+}
+
+#ratings {
+	position: relative;
+	float: right;
+	height: 45%;
+	width: 55%;
+	top: -100%;
+	right: 2%;
+	background-color: #080808;
+	margin-bottom: -20%;
+}
+
+#our_rating {
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-decoration: underline 2px solid #D49204;
+}
+
+
+#metacrit_logo {
+	height: 100%;
+	width: 80%;
+	max-width: 150px;
+}
+
+
+#rotten_logo {
+	height: 100%;
+	width: 80%;
+	max-width: 150px;
+}
+
+
+#imdb_logo {
+	height: 100%;
+	width: 80%;
+	max-width: 150px;
+}
+
+#reviewers_flexcontainer {
+	position: relative;
+	width: 90%;
+	height: 40%;
+	left: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.reviewers_logos {
+	width: 33%;
+	height: 100%;
+	text-align: center;
+	
+}
+
+#ratings_flexcontainer {
+	position: relative;
+	width: 90%;
+	height: 15%;
+	left: 5%;
+	top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: transparent;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 4vh;
+}
+
+.rating_texts {
+	font-size: 1.5vh;
+	color: white;
+}
+
+.rating_percentages {
+	position: relative;
+	width: 33%;
+	height: 100%;
+	text-align: center;
+	border: none;
+}
+
+/* Mobile Responsiveness for main content ratings */
+
+@media (max-width: 1024px) {
+	#trailer_box  {
+		top: 5%;
+		float: none;
+		width: 95%;
+		left: 2.5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#ratings  {
+		top: 10%;
+		float: none;
+		width: 95%;
+		left: 2.5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#poster_and_info  {
+		width: 95%;
+		margin: auto;
+		left: 0%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#reviewers_flexcontainer  {
+		max-height: 110px;
+	}
+}
+
+
+/* */
+/* Mobile Responsiveness */
+/* */
+
+@media (min-width: 1024px) {
+	#myLinks {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1025px) {
+	  #hamburger_icon {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	  .logo img {
+		padding-top: 5px;
+	}
+}
+
+@media (max-width: 1024px) {
+	  .non_mobile_li {
+		display: none
+	}
+}
+
+@media (max-width: 1024px) {
+	  nav a {
+		width: 25px;
+	}
+}
+
+@media (max-width: 1024px) {
+	  #hamburger_icon {
+		padding-right:35px;
+	}
+}
+
+@media (max-width: 720px) {
+	  .logo img {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 420px) {
+	  #hamburger_icon {
+		padding-right:15px;
+	}
+}
+
+@media (max-width: 395px) {
+	  #search_icon {
+		display: none;
+	}
+}
+
+/* */
+/* End of Mobile Responsiveness */
+/* */
+
