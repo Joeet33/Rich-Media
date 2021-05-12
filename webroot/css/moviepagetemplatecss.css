@@ -420,30 +420,37 @@ li {
 
 /* Mobile Responsiveness for main content ratings */
 
+
 @media (max-width: 1024px) {
-	#trailer_box  {
-		top: 5%;
-		float: none;
-		width: 95%;
-		left: 2.5%;
+	#flex-box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 200%;
+		width: 100%;
 	}
 }
 
 @media (max-width: 1024px) {
-	#ratings  {
-		top: 10%;
-		float: none;
-		width: 95%;
-		left: 2.5%;
+	#flex-container1 {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 41%;
+		width: 90%;
+		left: 2%;
 	}
 }
 
 @media (max-width: 1024px) {
-	#poster_and_info  {
-		width: 95%;
-		margin: auto;
-		left: 0%;
-	}
+#flex-container2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    width: 100%;
+    top: 8%;
+}
 }
 
 @media (max-width: 1024px) {
