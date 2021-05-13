@@ -248,6 +248,9 @@ li {
 	right: 4%;
 }
 
+/* End of search bar and sign in */
+
+
 #flex-box{
 	position: relative;
     height: 89%;
@@ -268,8 +271,6 @@ li {
     display: flex;
     flex-direction: row;
 }
-
-/* End of search bar and sign in */
 
 /* Code for the footer */
 #footer {

@@ -66,6 +66,151 @@ li {
     padding-left: 2%;
 }
 
+/* Search bar and sign in */
+
+#search_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+}
+
+#signin_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+}
+
+#login_inputs {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	background-color: #181818;
+}
+
+#logintitle {
+	position: relative;
+	text-align: center;
+	top: 5%;
+	font-size: 30px;
+	text-decoration: underline 2px #D49204;
+	cursor: default;
+}
+
+#login_form1 {
+	text-align: center;
+}
+
+#login_form2 {
+	text-align: center;
+}
+
+#loginusername {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#loginpassword {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#submitbuttonlog {
+	width: 25%;
+	margin-top: 8%;
+	margin-left: 37.5%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	color: lightgray;
+	border: 2px solid #D49204;
+	background-color: #101010;
+	cursor: pointer;
+}
+
+#search_bar {
+	position: relative;
+	height: 15%;
+	width: 100%;
+	top: 50%;	
+}
+
+#searchbx {
+	text-align: center;
+}
+
+#sname {
+	height: 15%;
+	width: 40%;
+	font-size: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	
+}
+
+::placeholder {
+	color: lightgray;
+}
+
+.fa-search:hover {
+	cursor: pointer;
+}
+
+.fa-times:hover {
+	cursor: pointer;
+}
+
+#close_button {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+#close_button2 {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+/* End of search bar and sign in */
+
 /* Styling slideshow on homepage */
 
 .slidershow {
