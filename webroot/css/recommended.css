@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #202020;
+	height: 100vh;
+	color: white;
+}
+
+/* Code for the main navigation bar */
+
+nav {
+	height: 11%;
+	width: 100%;
+	background-color: #080808;
+	overflow: none;
+	font-size: 14px;
+	font-weight: bold;
+	min-height: 70px;
+	min-width: 300px;
+}
+
+nav a {
+	width: 100px;
+	display: block;
+	padding: 20px 12px;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	text-align: center;
+}
+
+ul {
+	padding: 5px 0 0 0;
+	margin: 0 0 0 275px;
+	list-style: none;
+}
+
+li {
+	float: left;
+}
+
+
+.logo img {
+	position: absolute;
+	margin-left: 40px;
+	width: 220px;
+	height: auto;
+	padding-top: 2px;
+	
+}
+
+#main {
+	display: flex;
+	min-height: 75.5%;
+}
+
+/*Featured posts*/
+
+.featured {
+	position: relative;
+    width: 22%;
+    padding-top: 6%;
+    padding-left: 2%;
+}
+
+/* Search bar and sign in */
+
+#search_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+}
+
+#signin_popup {
+	display: none;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(16,16,16,.95);
+	z-index: 99;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+}
+
+#login_inputs {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	background-color: #181818;
+}
+
+#logintitle {
+	position: relative;
+	text-align: center;
+	top: 5%;
+	font-size: 30px;
+	text-decoration: underline 2px #D49204;
+	cursor: default;
+}
+
+#login_form1 {
+	text-align: center;
+}
+
+#login_form2 {
+	text-align: center;
+}
+
+#loginusername {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#loginpassword {
+	height: 10%;
+	width: 50%;
+	font-size: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#submitbuttonlog {
+	width: 25%;
+	margin-top: 8%;
+	margin-left: 37.5%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	color: lightgray;
+	border: 2px solid #D49204;
+	background-color: #101010;
+	cursor: pointer;
+}
+
+#search_bar {
+	position: relative;
+	height: 15%;
+	width: 100%;
+	top: 50%;	
+}
+
+#searchbx {
+	text-align: center;
+}
+
+#sname {
+	height: 15%;
+	width: 40%;
+	font-size: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #D49204;
+	outline: none;
+	padding-bottom: 1%;
+	color: lightgray;
+	
+}
+
+::placeholder {
+	color: lightgray;
+}
+
+.fa-search:hover {
+	cursor: pointer;
+}
+
+.fa-times:hover {
+	cursor: pointer;
+}
+
+#close_button {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+#close_button2 {
+	position: relative;
+	float: right;
+	font-size: 40px;
+	top: 5%;
+	right: 4%;
+}
+
+/* End of search bar and sign in */
+
+#flex-box{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+#flex-container1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 33%;
+}
+
+#flex-container2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 33%;
+}
+
+#flex-container3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 33%;
+}
+
+.img_pos {
+    position: relative;
+    width: 20%;
+    height: 75%;
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+.img_size {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#rating{
+    position: relative;
+    text-align: center;
+    height: 10%;
+    width: 60%;
+}
+
+.score{
+    border-style: groove;
+    position: relative;
+    width: 4.5%;
+    height: 30%;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.recommendation{
+    border-style: groove;
+    position: relative;
+    width: 60%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+/* Styling slideshow on homepage */
+
+.slidershow {
+	width: 50%;
+    height: 50%;
+    overflow: hidden;
+    right: 3%;
+	padding-top: 4%;
+}
+.middle {
+	position: relative;
+    border-radius: 61px;
+}
+.navslide {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	height: 3%;
+}
+.box {
+	width: 21px;
+	height: 20px;
+	border: 2px solid #fff;
+	margin: 14px;
+	cursor: pointer;
+	transition: 0.4s;
+	border-radius: 78%;
+}
+
+.box:hover{
+	background: #fff;
+  }
+  
+  input[name="r"]{
+	  position: absolute;
+	  visibility: hidden;
+  }
+  
+  .slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+  }
+  
+  .slide{
+	width: 20%;
+	transition: 0.6s;
+  }
+  .slide img{
+	width: 100%;
+	height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+	margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+	margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+	margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+	margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+	margin-left: -80%;
+  }
+
+/* Code for the two icons in the top right */
+
+
+#search_icon {
+	position: relative;
+	float: right;
+	font-size: 20px;
+}
+
+#hamburger_icon {
+	position: relative;
+	float: right;
+	font-size: 20px;
+}
+
+/* Code for the footer */
+#footer {
+    width: 100%;
+    background-color: #080808;
+    overflow: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 70px;
+    min-width: 300px;
+    position: relative;
+    bottom: 0%;
+}
+
+#copyrights {
+	position: relative;
+    font-size: 3vh;
+    left: 45vw;
+    top: 3vh;
+}
+
+/* Code for the hamburger menu drop down */
+
+#myLinks {
+  display: none;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+  text-align: center;
+  background-color: #101010;
+  font-weight: bold;
+  transition: all 0.5 ease 0.5;
+}
+
+#myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+#myLinks a:hover {
+  background-color: #505050;
+}
+
+
+/* */
+/* Mobile Responsiveness */
+/* */
+
+@media (min-width: 1024px) {
+	#myLinks {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	  #hamburger_icon {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	  .logo img {
+		padding-top: 5px;
+	}
+}
+
+@media (max-width: 1024px) {
+	  .non_mobile_li {
+		display: none
+	}
+}
+
+@media (max-width: 1024px) {
+	  nav a {
+		width: 25px;
+	}
+}
+
+@media (max-width: 1024px) {
+	  #hamburger_icon {
+		padding-right:35px;
+	}
+}
+
+@media (max-width: 720px) {
+	  .logo img {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 420px) {
+	  #hamburger_icon {
+		padding-right:15px;
+	}
+}
+
+@media (max-width: 395px) {
+	  #search_icon {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	#main {
+		display: flex;
+		flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+ .middle {
+    position: relative;
+    border-radius: 61px;
+    left: 13%;
+}
+}
+
+@media (max-width: 1024px) {
+	.slidershow {
+	width: 75%;
+    height: 75%;
+    overflow: hidden;
+    padding-top: 12%;
+    border-radius: 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.featured {
+		position: relative;
+		width: 45%;
+		padding-top: 6%;
+		padding-left: 28%;
+	}
+}
+
+@media (max-width: 1024px) {
+#footer {
+    width: 100%;
+    background-color: #080808;
+    overflow: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 70px;
+    min-width: 300px;
+	position: unset;
+    bottom: 0%;
+}
+}
+
+/* */
+/* End of Mobile Responsiveness */
+/* */
