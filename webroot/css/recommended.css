@@ -281,6 +281,8 @@ li {
     height: 50%;
     margin-top: 2%;
     margin-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /* Styling slideshow on homepage */
