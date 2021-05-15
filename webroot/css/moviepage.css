@@ -413,7 +413,7 @@ li {
     font-size: 14px;
     min-height: 70px;
     min-width: 300px;
-    position: absolute;
+    position: relative;
     bottom: 0%;
 }
 
