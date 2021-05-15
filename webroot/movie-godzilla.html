@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Godzilla vs King Kong - Critique Central</title>
-<link rel="stylesheet" href="css/moviepagetemplatecss.css">
+<title>Critique Central</title>
+<link rel="stylesheet" href="css/moviepage.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 	
-	<div class="logo"> <a href="#"><img src="https://i.pinimg.com/originals/5f/9b/d7/5f9bd71fff2ab8be8a2f9a8dcf8568b0.png" alt="Logo"></a></div> <!--- Code for the Creative Critique logo  --->
+	<div class="logo"> <a href="../webroot/index.html"><img src="https://i.pinimg.com/originals/5f/9b/d7/5f9bd71fff2ab8be8a2f9a8dcf8568b0.png" alt="Logo"></a></div> <!--- Code for the Creative Critique logo  --->
 	
 	<nav>   <!--- Main naviagion bar  --->
 		<ul>
-			<li class="non_mobile_li"> <a href="#">OUR MOVIES</a></li>
-			<li class="non_mobile_li"> <a href="#">TOP MOVIES</a></li>
+			<li class="non_mobile_li"> <a href="../webroot/ourmovies.html">OUR MOVIES</a></li>
+			<li class="non_mobile_li"> <a href="../webroot/topmovies.html">TOP MOVIES</a></li>
 			<li class="non_mobile_li"> <a href="#">RECOMMENDED</a></li>
 			<li id="loginbut" class="non_mobile_li"> <a href="#">LOG IN</a></li>
 			<li id="hamburger_icon" class="navbar_icons" onclick="myFunction()"> <a href="#bbb"><i class="fa fa-bars"></i></a></li>
@@ -26,8 +26,8 @@
 	
 	
 	<div id="myLinks">   <!--- Navigation bar used when hamburger menu is clicked --->
-    	<a href="#"><i class="fa fa-film"> </i> OUR MOVIES</a>
-    	<a href="#"><i class="fa fa-star"> </i> TOP MOVIES</a>
+    	<a href="../webroot/ourmovies.html"><i class="fa fa-film"> </i> OUR MOVIES</a>
+    	<a href="../webroot/topmovies.html"><i class="fa fa-star"> </i> TOP MOVIES</a>
     	<a href="#"><i class="fa fa-thumbs-up"> </i> RECOMMENDED</a>
 		<a href="#"><i class="fa fa-search"> </i> SEARCH</a>
 		<a href="#" id="mobileloginbut"><i class="fa fa-user-circle"> </i> LOG IN</a>
@@ -60,7 +60,10 @@
 		</div>
 	</div>
 	
-	
+	<div id="flex-box">
+
+	<div id="flex-container1">
+
 	<div id="poster_and_info">	
 		<h1 id="movie_title">GODZILLA VS KING KONG</h1>
 		<div id="movie_poster_box">
@@ -68,13 +71,19 @@
 		</div>
 		<p class="info_text">RELEASE DATE: March 31 2021</p>
 		<p class="info_text">CAST:  Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, Shun Oguri, Eiza González, Julian Dennison, Lance Reddick, Kyle Chandler, and Demián Bichir. </p>
-	        <p class="info_text">DIRECTOR: Adam Wingard</p>
+        <p class="info_text">DIRECTOR: Adam Wingard</p>
 	</div>
-	
+</div>
+
+	<div id="flex-container2">
+
 	<div id="trailer_box">
 		<iframe id="trailer" width="727" height="409" src="https://www.youtube.com/embed/odM92ap8_c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
+
+
 	
+
 	<div id="ratings">
 		<h2 id="our_rating">OUR RATING: 75%</h2>
 		<div id="reviewers_flexcontainer">
@@ -95,7 +104,14 @@
 			<div class="rating_percentages">64%</div>
 		</div>
 	</div>
+
+</div>
+</div>
 	
+	<div id="footer">
+		<a id="copyrights">Copyrights</a>
+
+	</div>
 
 	
 <!--- Code that controls when the hamburger menu is displayed --->
