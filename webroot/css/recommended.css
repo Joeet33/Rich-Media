@@ -300,6 +300,7 @@ li {
     padding-bottom: 35%;
     padding-left: 25%;
     padding-right: 25%;
+	width: 64%;
 }
 
 /* Styling slideshow on homepage */
@@ -629,15 +630,24 @@ li {
 
     @media (max-width: 720px) {
         #rating1 {
-            border-style: groove;
-            border-style: groove;
-            width: 17%;
-            height: 23%;
-            padding-top: 20%;
-            padding-bottom: 25%;
-            padding-right: 25%;
+			width: 17%;
+			height: 31%;
+			padding-top: 20%;
+			padding-bottom: 25%;
+			padding-right: 25%;
+			width: 50%;
         }
             }
+
+	@media (max-width: 1024px) {
+		#rating1 {
+			height: 43%;
+			padding-top: 20%;
+			padding-bottom: 25%;
+			padding-right: 25%;
+			width: 85%;
+		}
+			}
 
     @media (max-width: 720px) {
         .score {
