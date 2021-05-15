@@ -278,13 +278,25 @@ li {
     background-color: #080808;
     overflow: none;
     font-size: 14px;
-    font-weight: bold;
     min-height: 70px;
     min-width: 300px;
     position: absolute;
     bottom: 0%;
 }
 
+#copyrights {
+	position: relative;
+    font-size: 2.5vh;
+	left: 40vw;
+}
+
+.socials{
+	position: relative;
+	width: 4%;
+    right: 23%;
+    padding-right: 1%;
+    margin-top: 0.5%;
+}
 
 /* */
 /* Mobile Responsiveness */
@@ -387,11 +399,48 @@ li {
 		background-color: #080808;
 		overflow: none;
 		font-size: 14px;
-		font-weight: bold;
 		min-height: 70px;
 		min-width: 300px;
 		position: unset;
 		bottom: 0%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#copyrights {
+		position: absolute;
+		font-size: 3vh;
+		left: 30%;
+		margin-top: 7%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.socials {
+		position: relative;
+		width: 6%;
+		left: 2%;
+		padding-right: 1%;
+		margin-top: 3.5%;
+	}
+}
+
+@media (max-width: 500px) {
+	#copyrights {
+		position: absolute;
+		font-size: 2vh;
+		left: 32%;
+		margin-top: 6%;
+	}
+}
+
+@media (max-width: 500px) {
+	.socials {
+		position: relative;
+		width: 7%;
+		left: 3%;
+		padding-right: 1%;
+		margin-top: 3.5%;
 	}
 }
 

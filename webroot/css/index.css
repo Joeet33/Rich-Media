@@ -303,7 +303,6 @@ li {
     background-color: #080808;
     overflow: none;
     font-size: 14px;
-    font-weight: bold;
     min-height: 70px;
     min-width: 300px;
     position: absolute;
@@ -312,9 +311,16 @@ li {
 
 #copyrights {
 	position: relative;
-    font-size: 3vh;
-    left: 45vw;
-    top: 3vh;
+    font-size: 2.5vh;
+	left: 40vw;
+}
+
+.socials{
+	position: relative;
+	width: 4%;
+    right: 23%;
+    padding-right: 1%;
+    margin-top: 0.5%;
 }
 
 /* Code for the hamburger menu drop down */
@@ -434,19 +440,55 @@ li {
 }
 
 @media (max-width: 1024px) {
-#footer {
-    width: 100%;
-    background-color: #080808;
-    overflow: none;
-    font-size: 14px;
-    font-weight: bold;
-    min-height: 70px;
-    min-width: 300px;
-	position: unset;
-    bottom: 0%;
-}
+	#footer {
+		width: 100%;
+		background-color: #080808;
+		overflow: none;
+		font-size: 14px;
+		min-height: 70px;
+		min-width: 300px;
+		position: unset;
+		bottom: 0%;
+	}
 }
 
+@media (max-width: 1024px) {
+	#copyrights {
+		position: absolute;
+		font-size: 3vh;
+		left: 30%;
+		margin-top: 7%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.socials {
+		position: relative;
+		width: 6%;
+		left: 2%;
+		padding-right: 1%;
+		margin-top: 3.5%;
+	}
+}
+
+@media (max-width: 500px) {
+	#copyrights {
+		position: absolute;
+		font-size: 2vh;
+		left: 32%;
+		margin-top: 6%;
+	}
+}
+
+@media (max-width: 500px) {
+	.socials {
+		position: relative;
+		width: 7%;
+		left: 3%;
+		padding-right: 1%;
+		margin-top: 3.5%;
+	}
+}
 /* */
 /* End of Mobile Responsiveness */
 /* */
