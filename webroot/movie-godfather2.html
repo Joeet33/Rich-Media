@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <title>Critique Central</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">	 
-  <link rel="stylesheet" href="css/topmovies.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>The Godfather 2 - Critique Central</title>
+<link rel="stylesheet" href="css/moviepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- External sheet that is used for the icons  --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
 	
 	<div class="logo"> <a href="../webroot/index.html"><img src="https://i.pinimg.com/originals/5f/9b/d7/5f9bd71fff2ab8be8a2f9a8dcf8568b0.png" alt="Logo"></a></div> <!--- Code for the Creative Critique logo  --->
@@ -64,41 +64,46 @@
 
 	<div id="flex-container1">
 
-<a class="img_size" href="../webroot/movie-shawshank.html">	
-	<img class="img_size" src="../webroot/images/shawshank.jpg">
-</a>
-
-<a class="img_size" href="../webroot/movie-godfather.html">	
-	<img class="img_size" src="../webroot/images/godfather.jpg">
-</a>
-
-<a class="img_size" href="../webroot/movie-godfather2.html">	
-	<img class="img_size" src="../webroot/images/godfather2.jpg">
-</a>
-
-<a class="img_size" href="../webroot/movie-batman.html">	
-	<img class="img_size" src="../webroot/images/batman.jpg">
-</a>
-
+	<div id="poster_and_info">	
+		<h1 id="movie_title">PULP FICTION</h1>
+		<div id="movie_poster_box">
+			<img id="movie_poster_img" src="../webroot/images/godfather2-cover.jpg" alt="pulp poster">
+		</div>
+		<p class="info_text">RELEASE DATE: 15 May 1975</p>
+		<p class="info_text">CAST: Al Pacino, Robert De Niro, Robert Duvall </p>
+        <p class="info_text">DIRECTOR: Francis Ford Coppola</p>
+	</div>
 </div>
 
-<div id="flex-container2">
+	<div id="flex-container2">
 
-<a class="img_size" href="../webroot/movie-12angrymen.html">	
-	<img class="img_size" src="../webroot/images/12angrymen.jpg">
-</a>
+	<div id="trailer_box">
+		<iframe id="trailer" width="727" height="409" src="https://www.youtube.com/embed/9O1Iy9od7-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
 
-<a class="img_size" href="../webroot/movie-schlinders.html">	
-	<img class="img_size" src="../webroot/images/schlindler.jpg">
-</a>
 
-<a class="img_size" href="../webroot/movie-lotr.html">	
-	<img class="img_size" src="../webroot/images/lotr.jpg">
-</a>
+	
 
-<a class="img_size" href="../webroot/movie-pulpfiction.html">	
-	<img class="img_size" src="../webroot/images/pulpfiction.jpg">
-</a>
+	<div id="ratings">
+		<h2 id="our_rating">OUR RATING: 92%</h2>
+		<div id="reviewers_flexcontainer">
+			<div class="reviewers_logos"> 
+				<img id="metacrit_logo" src="https://i.pinimg.com/originals/88/58/5b/88585b98c987237f7e773cd28c571227.png" alt="Metcritic Logo">
+			</div>
+			<div class="reviewers_logos"> 
+				<img id="rotten_logo" src="https://i.pinimg.com/originals/80/46/f1/8046f13ffad669d59bd961e98c8f5b2d.png" alt="Rotten Tomatoes Logo">
+			</div>
+			<div class="reviewers_logos"> 
+				<img id="imdb_logo" 
+			src="https://i.pinimg.com/originals/c6/43/50/c64350bea67c5d734db0baca39192caa.png" alt="IMDB Logo">
+			</div>
+		</div>
+		<div id ="ratings_flexcontainer">
+			<div class="rating_percentages">90%</div>
+			<div class="rating_percentages">96%</div>
+			<div class="rating_percentages">90%</div>
+		</div>
+	</div>
 
 </div>
 </div>
@@ -109,8 +114,9 @@
 	<img class="socials" src="../webroot/images/facebookicon.png" alt="">
 	<img class="socials" src="../webroot/images/insta-icon.png" alt="">
 	<img class="socials" src="../webroot/images/twitter-icon.png" alt="">
-</div>	
+</div>
 
+	
 <!--- Code that controls when the hamburger menu is displayed --->
 <script>   
 function myFunction() {
@@ -121,6 +127,8 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+	
 	
 $("#search_icon").click(function() {
 	
@@ -158,11 +166,10 @@ $("#submitbuttonlog").click(function() {
 	alert("You have logged in")
 
 });
+	
+
 </script>
+
 	
 </body>
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
 </html>
