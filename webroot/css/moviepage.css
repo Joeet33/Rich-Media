@@ -47,6 +47,14 @@ li {
 	float: left;
 }
 
+li:hover {
+	float: left;
+	font-size: 105%;
+}
+
+#search_icon:hover {
+	font-size: 150%;
+}
 
 .logo img {
 	position: absolute;
