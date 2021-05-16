@@ -258,7 +258,7 @@ li {
     border-radius: 25px;
 }
 p {
-    font-family: monospace;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20px;
 }
 @media screen and (max-width: 600px) {
