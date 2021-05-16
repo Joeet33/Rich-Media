@@ -103,6 +103,7 @@ li {
     width: 90%;
     margin-left: 1%;
     margin-top: 4%;
+    border-radius: 25px;
 }
 
 /* Search bar and sign in */
