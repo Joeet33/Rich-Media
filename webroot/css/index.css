@@ -346,6 +346,15 @@ li {
   background-color: #505050;
 }
 
+.text-link{
+	text-decoration: none;
+    color: white;
+}
+
+.text-link:hover{
+	text-decoration: underline;
+    color: white;
+}
 
 /* */
 /* Mobile Responsiveness */

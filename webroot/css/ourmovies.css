@@ -98,12 +98,23 @@ li {
   background-color: #505050;
 }
 
+.img_pos {
+	height: 80%;
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 4%;
+}
+
 .img_size {
 	height: 80%;
     width: 90%;
     margin-left: 1%;
     margin-top: 4%;
     border-radius: 25px;
+}
+
+.img_size:hover{
+	transform: scale(1.03);
 }
 
 /* Search bar and sign in */
